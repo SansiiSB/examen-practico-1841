@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>AtomGPT</title>
+</head>
+
+<body>
+  <header>
+    <div class="left-header-section">
+      <nav>
+        <button class="chat-button">Chat</button>
+        <button class="work-button">Work</button>
+      </nav>
+    </div>
+
+    <div class="right-header-section">
+      <button class="upgrade-button">Mejorar plan</button>
+      <button class="temp-chat-button">Chat temporal</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="welcome-message">
+      <h1>Hola, Eba.</h1>
+    </div>
+
+    <div class="search-bar">
+      <button aria-label="Adjuntar archivo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <title>plus</title>
+          <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+        </svg>
+      </button>
+      <input type="text" placeholder="Pregunta lo que quieras">
+
+      <div class="search-bar-icons">
+        <button aria-label="Escuchar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>microphone</title>
+            <path
+              d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z" />
+          </svg>
+        </button>
+
+        <button aria-label="Enviar mensaje">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>arrow-up</title>
+            <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-header">
+      <div class="sidebar-header-title">
+        <a href="#">
+          <h2>AtomGPT</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar-content">
+      <nav>
+        <button>
+          <span>Nuevo Chat</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>progress-pencil</title>
+            <path
+              d="M15.84 10.2L14.83 11.21L12.76 9.18L13.77 8.16C13.97 7.95 14.31 7.94 14.55 8.16L15.84 9.41C16.05 9.62 16.06 9.96 15.84 10.2M8 13.91L12.17 9.72L14.24 11.8L10.08 16H8V13.91M13 2V4C17.39 4.54 20.5 8.53 19.96 12.92C19.5 16.56 16.64 19.43 13 19.88V21.88C18.5 21.28 22.45 16.34 21.85 10.85C21.33 6.19 17.66 2.5 13 2M11 2C9.04 2.18 7.19 2.95 5.67 4.2L7.1 5.74C8.22 4.84 9.57 4.26 11 4.06V2.06M4.26 5.67C3 7.19 2.24 9.04 2.05 11H4.05C4.24 9.58 4.8 8.23 5.69 7.1L4.26 5.67M2.06 13C2.26 14.96 3.03 16.81 4.27 18.33L5.69 16.9C4.81 15.77 4.24 14.42 4.06 13H2.06M7.06 18.37L5.67 19.74C7.18 21 9.04 21.79 11 22V20C9.58 19.82 8.23 19.25 7.1 18.37H7.06Z" />
+          </svg>
+        </button>
+
+        <button>
+          <span>Imágenes</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>image-multiple-outline</title>
+            <path
+              d="M21,17H7V3H21M21,1H7A2,2 0 0,0 5,3V17A2,2 0 0,0 7,19H21A2,2 0 0,0 23,17V3A2,2 0 0,0 21,1M3,5H1V21A2,2 0 0,0 3,23H19V21H3M15.96,10.29L13.21,13.83L11.25,11.47L8.5,15H19.5L15.96,10.29Z" />
+          </svg>
+        </button>
+
+        <button>
+          <span>Biblioteca</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>library-shelves</title>
+            <path
+              d="M19.5,9V1.5H16.5V9H13.5V1.5H10.5V9H7.5V1.5H4.65V9H3V10.5H21V9H19.5M19.5,13.5H16.5V21H13.5V13.5H10.5V21H7.5V13.5H4.65V21H3V22.5H21V21H19.5V13.5Z" />
+          </svg>
+        </button>
+
+        <button>
+          <span>Programadas</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>clock</title>
+            <path
+              d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z" />
+          </svg>
+        </button>
+
+        <button>
+          <span>Complementos</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>plug</title>
+            <path
+              d="M13 9C13 10.1 13.9 11 15 11S17 10.1 17 9 16.1 7 15 7 13 7.9 13 9M7 9C7 10.1 7.9 11 9 11S11 10.1 11 9 10.1 7 9 7 7 7.9 7 9M9 13.2C9 12.6 8.4 12 7.8 12S6.6 12.6 6.6 13.2 7.2 14.4 7.8 14.4 9 13.9 9 13.2M14 16C14 14.9 13.1 14 12 14S10 14.9 10 16 10.9 18 12 18 14 17.1 14 16M12 4C16.4 4 20 7.6 20 12S16.4 20 12 20 4 16.4 4 12 7.6 4 12 4M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M17.5 13.2C17.5 12.5 16.9 12 16.3 12C15.6 12 15.1 12.6 15.1 13.2S15.7 14.4 16.3 14.4C16.9 14.5 17.5 13.9 17.5 13.2" />
+          </svg>
+        </button>
+
+        <button>
+          <span>Proyectos</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>folder-file-outline</title>
+            <path
+              d="M4 18H11V20H4C2.9 20 2 19.11 2 18V6C2 4.89 2.89 4 4 4H10L12 6H20C21.1 6 22 6.89 22 8V10.17L20.41 8.59L20 8.17V8H4V18M23 14V21C23 22.11 22.11 23 21 23H15C13.9 23 13 22.11 13 21V12C13 10.9 13.9 10 15 10H19L23 14M21 15H18V12H15V21H21V15Z" />
+          </svg>
+        </button>
+
+        <button>
+          <span>Codex</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>code-greater-than</title>
+            <path
+              d="M10.41,7.41L15,12L10.41,16.6L9,15.18L12.18,12L9,8.82M5,3C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5Z" />
+          </svg>
+        </button>
+
+        <button>
+          <span>Más</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <title>dots-horizontal</title>
+            <path
+              d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+
+    <section class="recent-chats">
+      <div class="recent-chats-container">
+        <h2>Recientes</h2>
+        <nav>
+          <a href="#">Revisar barra de búsqueda</a>
+          <a href="#">Pueblos bonitos de Mallorca</a>
+          <a href="#">Ajustar botón CTA CSS</a>
+          <a href="#">Transferir dinero a Santander</a>
+          <a href="#">Mejorar calidad imagen</a>
+          <a href="#">Sangrado nasal leve</a>
+          <a href="#">Problema batería coche</a>
+          <a href="#">Postcreditos Insidious</a>
+          <a href="#">Hip trust, gluteos y pierna</a>
+          <a href="#">Reserva restaurante cumpleaños</a>
+          <a href="#">Dudas examen CSS</a>
+          <a href="#">Plan de entrenamiento semanal</a>
+          <a href="#">Receta de lentejas rápida</a>
+          <a href="#">Cómo hacer curriculum</a>
+          <a href="#">Traducir email al inglés</a>
+        </nav>
+      </div>
+    </section>
+
+    <div class="user-info">
+      <div class="user-avatar">
+        <span>EB</span>
+      </div>
+      <div class="user-details">
+        <span>Eba</span>
+        <span>Gratis</span>
+      </div>
+      <button>
+        <span>Mejorar plan</span>
+      </button>
+    </div>
+  </aside>
+</body>
+
+</html>
