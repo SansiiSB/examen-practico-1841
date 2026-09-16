@@ -78,14 +78,34 @@ header {
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 13%, 18%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.sidebar.closed {
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(-85%);
 }
 
 .sidebar-header {
   margin-bottom: 1rem;
 }
 
-.sidebar-header-title h2 {
-  font-size: 1.5rem;
+.sidebar-header-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-header-title button {
+  background: transparent;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.sidebar-header-title button svg {
+  width: 1rem;
+  height: 1rem;
 }
 
 .sidebar-header-title a {
