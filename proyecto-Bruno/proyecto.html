@@ -16,73 +16,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="./src/index.js"></script>
   <title>SYMMETRY</title>
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <a href="#">
-        <img src="./Logos/Adobe Express - file.png" alt="Logo Symmetry">
-        <img src="./Logos/logo.png" alt="Symmetry">
-      </a>
-    </div>
-
-    <nav>
-      <div class="menu">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">REGLAS DEL CLUB</a></li>
-          <li><a href="#">ACTIVIDADES</a></li>
-          <li><a href="#">HORARIOS</a></li>
-          <li><a href="#">ENTRENADORES</a></li>
-          <li><a href="#">PRECIOS Y PLANES</a></li>
-          <li><a href="#">REGISTRATE</a></li>
-          <li><a href="#">BLOG</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="header-right">
-      <details class="lang-selector">
-        <summary>
-          ES
-          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M7,10L12,15L17,10H7Z" />
-          </svg>
-        </summary>
-        <ul class="lang-options">
-          <li><a href="/en">English</a></li>
-          <li><a href="/es">Español</a></li>
-        </ul>
-      </details>
-    </div>
+    <logo-component></logo-component>
+    <nav-component></nav-component>
+    <header-component></header-component>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-image">
-        <img src="./imagenes/foto-portada.webp" alt="Hero">
-      </div>
-      <div class="hero-title">
-        <h1>MÁS QUE UN GIMNASIO</h1>
+    <hero-component></hero-component>
+
+
+    <section class="sergio">
+      <div class="section-img">
+        <img src="./imagenes/sergio maravilla martinez.png" alt="">
       </div>
 
-      <div class="square">
-        <div class="square-black"></div>
+      <div class="sergio-title">
+        <h3>No solo lo decimos nosotros</h3>
       </div>
 
-      <div class="hero-subtitle">
-        <p>Entrena más. Entiende mejor. Progresa más rápido.
-          <br>Ejercicios, rutinas y entrenamiento de fuerza en un solo
-          lugar.
-        </p>
+      <div class="sergio-title-lo-dice">
+        <h1>LO DICE</h1>
       </div>
 
-      <div class="hero-description">
-        <h2>Únete al club</h2>
+      <div class="sergio-title-maravilla">
+        <h2>SERGIO “MARAVILLA” MARTÍNEZ</h2>
       </div>
-      <a href="#" class="hero-cta">Empieza ahora</a>
     </section>
   </main>
 

@@ -241,3 +241,50 @@ nav .menu ul li a:hover::after {
   color: hsl(355, 78%, 56%);
   transform: translateX(-5%);
 }
+
+.sergio {
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+}
+
+.section-img img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sergio-title h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 45;
+  font-size: 3.5rem;
+  color: hsl(355, 78%, 56%);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 92% 100%, 0 100%);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.sergio-title-lo-dice h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: hsl(355, 78%, 56%);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 92% 100%, 0 100%);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.sergio-title-maravilla h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: hsl(355, 78%, 56%);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 92% 100%, 0 100%);
+  transition: background 0.25s ease, transform 0.25s ease;
+}

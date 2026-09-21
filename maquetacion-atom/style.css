@@ -59,15 +59,6 @@ header {
   color: hsl(0, 0%, 100%);
 }
 
-.upgrade-button {
-  color: hsl(210, 90%, 65%);
-  font-weight: 600;
-}
-
-.temp-chat-button {
-  color: hsl(0, 10%, 75%);
-}
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -218,7 +209,7 @@ main {
   font-weight: 400;
 }
 
-.search-bar {
+.prompt-input-section {
   width: 100%;
   max-width: 44rem;
   display: flex;
@@ -229,7 +220,7 @@ main {
   border-radius: 2rem;
 }
 
-.search-bar input {
+.prompt-input-section input {
   flex: 1;
   border: none;
   outline: none;
@@ -238,7 +229,7 @@ main {
   font-size: 1rem;
 }
 
-.search-bar input::placeholder {
+.prompt-input-section input::placeholder {
   color: hsl(0, 10%, 75%);
 }
 
