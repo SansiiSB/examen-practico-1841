@@ -6,7 +6,19 @@ class Table extends HTMLElement {
   }
 
   connectedCallback() {
+    this.loadData()
     this.render()
+  }
+
+  loadData() {
+    this.data = [
+      {
+        nombre: 'Eba Sansivieri',
+        email: 'ebasansibieri@gmail.com',
+        fechaCreacion: '2026-09-22',
+        fechaActualizacion: '2026-09-22'
+      }
+    ]
   }
 
   render() {
@@ -69,15 +81,32 @@ class Table extends HTMLElement {
       <div class="table-body">
         <div class="table-element">
           <ul>
-            <li><strong>Nombre:</strong> Eva Sansivieri</li>
-            <li><strong>Email:</strong> ebasansibieri@gmail.com</li>
-            <li><strong>Fecha de creación:</strong> 2026-09-22</li>
-            <li><strong>Fecha de actualización:</strong> 2026-09-22</li>
           </ul>
         </div>
       </div>
     </section>
     `
+
+    const ul = this.shadow.querySelector('ul')
+    this.data.forEach(table => {
+      const li = document.createElement('li')
+
+      const campos = [
+        ['Nombre:', table.nombre],
+        ['Email:', table.email],
+        ['Fecha de creación:', table.fechaCreacion],
+        ['Fecha de actualización:', table.fechaActualizacion]
+      ]
+
+      campos.forEach(([label, valor]) => {
+        const strong = document.createElement('strong')
+        strong.textContent = label
+        li.append(strong, ` ${valor}`, document.createElement('br'))
+      })
+
+      ul.appendChild(li)
+    })
+
   }
 }
 

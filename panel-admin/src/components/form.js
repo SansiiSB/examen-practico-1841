@@ -28,7 +28,7 @@ class Form extends HTMLElement {
       .tab:hover{
         background-color: hsl(7, 51%, 44%);
       }
-
+      
       .tab-buttons button:hover{
         background-color: hsl(7, 51%, 44%);
       }
