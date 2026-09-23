@@ -41,7 +41,7 @@ class Form extends HTMLElement {
 
       .form-body {
         background-color: hsl(0, 0%, 100%);
-        padding: 1rem;
+        padding: 2.5rem;
       }
 
       .input-row {
