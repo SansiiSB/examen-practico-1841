@@ -60,15 +60,19 @@ class Table extends HTMLElement {
       }
 
       .table-body ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
         list-style: none;
         padding: 0;
       }
 
       .table-body ul li {
-        padding: 0.2rem;
+        line-height: 1.5rem;
         font-size: 0.9rem;
       }
     </style>
+    
     <section class="table">
       <div class="table-header">
         <div class="pagination">
