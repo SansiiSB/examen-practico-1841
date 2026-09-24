@@ -13,13 +13,13 @@ class Logo extends HTMLElement {
     this.shadow.innerHTML =
     /*html*/`
     <style>
-      .header-title {
-        font-size: 0.8rem;
+      h1 {
+        font-size: 1.8rem;
         color: hsl(0, 0%, 100%);
       }
     </style>
 
-    <div class="header-title">
+    <div class="title">
       <h1>AtomGPT - Usuarios</h1>
     </div>
     `

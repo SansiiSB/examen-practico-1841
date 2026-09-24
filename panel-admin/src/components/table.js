@@ -3,6 +3,8 @@ class Table extends HTMLElement {
   constructor() {
     super()
     this.shadow = this.attachShadow({ mode: 'open' })
+    this.labels = JSON.parse(this.getAttribute('labels'))
+    console.log(this.labels)
   }
 
   connectedCallback() {
@@ -13,8 +15,14 @@ class Table extends HTMLElement {
   loadData() {
     this.data = [
       {
-        nombre: 'Eba Sansivieri',
-        email: 'ebasansibieri@gmail.com',
+        producto: 'Eba Sansivieri',
+        precio: 'ebasansibieri@gmail.com',
+        fechaCreacion: '2026-09-22',
+        fechaActualizacion: '2026-09-22'
+      },
+      {
+        producto: 'Eba Sansivieri',
+        precio: 'ebasansibieri@gmail.com',
         fechaCreacion: '2026-09-22',
         fechaActualizacion: '2026-09-22'
       }
@@ -51,11 +59,16 @@ class Table extends HTMLElement {
         cursor: pointer;
       }
 
-      .table-body {
+      .table-body{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .table-element {
         padding: 0.5rem;
         display: flex;
         flex-direction: column;
-        font-weight: 500;
         border: 0.2rem solid hsl(7, 51%, 34%);
       }
 
@@ -71,6 +84,15 @@ class Table extends HTMLElement {
         line-height: 1.5rem;
         font-size: 0.9rem;
       }
+
+      .table-body ul li span {
+        font-weight: 600;
+      }
+
+      .table-body ul li span::after {
+        content: ":";
+        margin-right: 0.5rem;
+      }
     </style>
     
     <section class="table">
@@ -82,33 +104,29 @@ class Table extends HTMLElement {
         </div>
       </div>
 
-      <div class="table-body">
-        <div class="table-element">
-          <ul>
-          </ul>
-        </div>
-      </div>
+      <div class="table-body"></div>
     </section>
     `
 
-    const ul = this.shadow.querySelector('ul')
-    this.data.forEach(table => {
-      const li = document.createElement('li')
+    const tableBody = this.shadow.querySelector('.table-body')
 
-      const campos = [
-        ['Nombre:', table.nombre],
-        ['Email:', table.email],
-        ['Fecha de creación:', table.fechaCreacion],
-        ['Fecha de actualización:', table.fechaActualizacion]
-      ]
+    this.data.forEach(element => {
+      const tableElemenet = document.createElement('div')
+      tableElemenet.classList.add('table-element')
+      tableBody.appendChild(tableElemenet)
 
-      campos.forEach(([label, valor]) => {
-        const strong = document.createElement('strong')
-        strong.textContent = label
-        li.append(strong, ` ${valor}`, document.createElement('br'))
+      const ul = document.createElement('ul')
+      tableElemenet.appendChild(ul)
+
+      Object.entries(element).forEach(([clave, valor]) => {
+        const li = document.createElement('li')
+        const strong = document.createElement('span')
+        strong.textContent = this.labels[clave]
+
+        li.textContent = valor
+        li.prepend(strong)
+        ul.appendChild(li)
       })
-
-      ul.appendChild(li)
     })
 
   }

@@ -75,8 +75,8 @@ class Hero extends HTMLElement {
         position: absolute;
         font-family: 'Alumni Sans', sans-serif;
         text-shadow: 0 0 0.3rem hsl(0, 0%, 0%);
-        top: 28%;
-        left: 28%;
+        top: 30%;
+        left: 29%;
         transform: translate(-50%, -50%);
         font-size: 1.8rem;
         color: hsl(0, 0%, 100%);
@@ -84,17 +84,20 @@ class Hero extends HTMLElement {
       }
 
       .hero-description {
-        font-family: "Notable", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-shadow: 0 0 0.2rem hsl(0, 0%, 0%);
         position: absolute;
         top: 40%;
         left: 20%;
         transform: translate(-50%, -50%);
-        font-size: 1.5rem;
-        color: hsl(355, 66%, 48%);
         z-index: 1001;
+      }
+
+      .hero-description h2{
+        font-family: "Notable", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white ,-2px 2px 0 white, 0 0 0.2rem hsl(0, 0%, 0%);
+        font-size: 2.5rem;
+        color: hsl(355, 66%, 48%);
       }
 
       .hero-cta {
@@ -104,7 +107,7 @@ class Hero extends HTMLElement {
         color: hsl(0, 0%, 100%);
         font-family: 'Oswald', sans-serif;
         font-weight: 800;
-        font-size: 0.8rem;
+        font-size: 1.3rem;
         text-transform: uppercase;
         letter-spacing: 0.15rem;
         text-decoration: none;
@@ -112,7 +115,7 @@ class Hero extends HTMLElement {
         transition: background 0.25s ease, transform 0.25s ease;
         position: absolute;
         top: 45%;
-        left: 15%;
+        left: 13%;
         z-index: 1001;
       }
 
